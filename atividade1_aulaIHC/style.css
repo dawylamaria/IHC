@@ -1,0 +1,71 @@
+/* Estilo geral do corpo */
+body {
+    background-color: #F4E5FF; /* Fundo lilás claro */
+    font-family: Arial, sans-serif;
+    color: #4B0082; /* Texto em lilás escuro */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho com foto */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Estilos dos títulos */
+h1 {
+    color: #8A2BE2; /* Título em lilás vibrante */
+    font-size: 2em;
+}
+
+h2 {
+    color: #9370DB;
+    border-bottom: 1px solid #8A2BE2;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #4B0082;
+}
+
+/* Links */
+a {
+    color: #6A5ACD;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4B0082;
+}
+
+/* Listas */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+    color: #4B0082;
+}
