@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Simples</title>
-    <link rel="stylesheet" href="styler.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Metas de Leitura</title>
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <div id="calculadora">
-        <div id="inputArea">
-            <input type="text" id="inputNum1" placeholder="Digite um número">
-            <select id="selectOperacao">
-                <option value="soma">+</option>
-                <option value="subtracao">-</option>
-                <option value="divisao">/</option>
-                <option value="multiplicacao">*</option>
-            </select>
-            <input type="text" id="inputNum2" placeholder="Digite um número">
-        </div>
-        <button id="btnCalcular">Confirmar</button>
-        <div id="resultado">RESULTADO:</div>
-    </div>
+  <div class="container">
+    <h1 class="center-align">Gerenciador de Metas de Leitura</h1>
 
-    <script src="script.js"></script>
+    <form id="metaForm" class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="livro" type="text" required>
+          <label for="livro">Nome do Livro</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="paginas" type="number" required>
+          <label for="paginas">Número de Páginas</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="paginasDia" type="number" required>
+          <label for="paginasDia">Páginas que deseja ler por dia</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="dias" type="number" required>
+          <label for="dias">Dias para completar</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit">Criar Meta</button>
+    </form>
+
+    <div id="metasContainer" class="row"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
